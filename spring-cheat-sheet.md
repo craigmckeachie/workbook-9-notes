@@ -13,7 +13,7 @@
 
 ## **Spring vs. Spring Boot**
 
-* **Spring** — Powerful and flexible, but requires a lot of setup.
+* **Spring** — Powerful and flexible, but requires a lot of setup via configuration files.
 * **Spring Boot** — Spring *already configured* for you.
 
 
