@@ -118,7 +118,7 @@ You may optionally add methods later for delete, update, or search.
 Create a class named `ProductDaoInMemory` that implements the `ProductDao` interface. It should:
 
 - Use `@Component` to register as a Spring bean
-- Implement the `add()` and `getAll()` methods as we did in [Sakila with Actor](https://github.com/craigmckeachie/SakilaSpringBoot/blob/main/src/main/java/com/pluralsight/SakilaSpringBoot/data/ActorDaoInMemory.java)
+- Implement the `add()` and `getAll()` methods as we did in [Sakila with Actor](https://github.com/craigmckeachie/SakilaSpringBoot/blob/main/src/main/java/com/pluralsight/sakila/data/ActorDaoInMemory.java)
 
 
 ---
