@@ -102,7 +102,7 @@ Generate getters, setters, and a constructor.
 
 ### 🧩 Step 2: Create a DAO Interface
 
-In the `com.northwind.tradingTradersSpringBoot.dao` package, create an interface named `ProductDao` with the following method signatures:
+In the `com.northwind.trading.data` package, create an interface named `ProductDao` with the following method signatures:
 
 ```java
 Product add(Product product);
@@ -137,7 +137,7 @@ private ProductDao productDao;
 
 - Contain your UI logic in the `run()` method:
   - List products
-  - Add a new product (prompt for values)
+  - Add a new product
 
 
 
