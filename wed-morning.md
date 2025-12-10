@@ -1,4 +1,4 @@
-1. [Review/Skim Spring Cheat Sheet](https://github.com/craigmckeachie/SakilaSpringBoot/blob/config/src/main/java/com/pluralsight/sakila/config/DatabaseConfig.java)
+1. [Review/Skim Spring Cheat Sheet](https://github.com/craigmckeachie/workbook-9-notes/blob/main/spring-cheat-sheet.md)
 1. Review/Skim workbook Workbook 9a pages 1-63
    - do together
    - someone share screen
