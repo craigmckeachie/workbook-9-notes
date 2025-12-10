@@ -12,17 +12,18 @@ You will create a new Java Maven project using **Spring Boot**.
    👉 [Generate Spring Boot Project](https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.5.0&packaging=jar&jvmVersion=17&groupId=com.pluralsight&artifactId=NorthwindTradersSpringBoot&name=NorthwindTradersSpringBoot&description=Demo%20project%20for%20Spring%20Boot&packageName=com.pluralsight.NorthwindTradersSpringBoot&dependencies=web)
 
 2. The project will already be configured with:
-   - **Project Type:** Maven Project  
-   - **Language:** Java  
-   - **Spring Boot Version:** 4.0.0  
-   - **Group:** `com.pluralsight`  
-   - **Artifact:** `NorthwindTradersSpringBoot`  
-   - **Name:** `NorthwindTradersSpringBoot`  
-   - **Description:** Demo project for Spring Boot  
-   - **Package name:** `com.northwind.trading`  
-   - **Packaging:** Jar  
-   - **Java Version:** 17  
-   - **Dependencies:** Spring Web  
+
+   - **Project Type:** Maven Project
+   - **Language:** Java
+   - **Spring Boot Version:** 4.0.0
+   - **Group:** `com.pluralsight`
+   - **Artifact:** `NorthwindTradersSpringBoot`
+   - **Name:** `NorthwindTradersSpringBoot`
+   - **Description:** Demo project for Spring Boot
+   - **Package name:** `com.northwind.trading`
+   - **Packaging:** Jar
+   - **Java Version:** 17
+   - **Dependencies:** Spring Web
 
 3. Click **Generate** to download the project zip file.
 
@@ -33,7 +34,6 @@ You will create a new Java Maven project using **Spring Boot**.
 ---
 
 ## ✅ Exercise 2: Create a Product Model, DAO, and CLI Interface
-
 
 ### 🧱 Step 1: Add the code to see what beans are being created by Spring to `NorthwindTradersSpringBootApplication` using the Sakila example below
 
@@ -83,8 +83,6 @@ public class SakilaSpringBootApplication {
 
 ```
 
-
-
 ### 🧱 Step 1: Create the Product model
 
 Inside the `com.northwind.trading.model` package, create a `Product` class with the following fields:
@@ -120,7 +118,6 @@ Create a class named `ProductDaoInMemory` that implements the `ProductDao` inter
 - Use `@Component` to register as a Spring bean
 - Implement the `add()` and `getAll()` methods as we did in [Sakila with Actor](https://github.com/craigmckeachie/SakilaSpringBoot/blob/main/src/main/java/com/pluralsight/sakila/data/ActorDaoInMemory.java)
 
-
 ---
 
 ## 🏃 Step 4: Build the CLI Application
@@ -139,16 +136,9 @@ private ProductDao productDao;
   - List products
   - Add a new product
 
-
-
 ---
-<!-- 
+
 ## 🛠 Step 5: Configure Your Database Connection
-
->NOTE: You can also follow the way it is done in these files. This allows the URL to be passed in from the application.properties file but still allows the DB username and password to be passsed in from the command-line.
-Main File: https://github.com/erics273/SpringBootSakila/blob/withDB/src/main/java/com/pluralsight/MainProgram.java
-DB Config File: https://github.com/erics273/SpringBootSakila/blob/withDB/src/main/java/com/pluralsight/config/DatabaseConfig.java
-
 
 Open `src/main/resources/application.properties` and add the following values (with your real credentials):
 
@@ -163,6 +153,13 @@ Create a class named `DatabaseConfiguration` in the `config` package. It should:
 - Use `@Configuration`
 - Have a `@Bean` method that returns a `DataSource` using `BasicDataSource`
 - Read properties using `@Value`
+- Add these line to the constructor so you can verify that the values are being read from the properties file.
+
+```Java
+ System.out.println(url);
+ System.out.println(username);
+ System.out.println(password);
+```
 
 You’ll need to add the following dependencies to your `pom.xml`:
 
@@ -179,20 +176,4 @@ You’ll need to add the following dependencies to your `pom.xml`:
 </dependency>
 ```
 
----
 
-## 💡 Bonus (Optional)
-
-- Add methods to `ProductDao` and `JdbcProductDao` for:
-  - Deleting a product
-  - Updating product details
-  - Searching by keyword
-
----
-
-## ✅ Wrap-Up
-
-- Make sure your CLI interface can:
-  - List products from the database
-  - Add new products
-- Commit and push your code! -->

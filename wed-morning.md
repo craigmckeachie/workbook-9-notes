@@ -4,7 +4,8 @@
    - someone share screen
    - if you don't get it ask but don't stay on one page too long
    - read it out loud or at least discuss each page
-1. Do the exercise on page 64 which is added a DatabaseConfig to your NorthwindSpringBoot project
+2. [Complete Step 5 of the NorthwindTradersSpringBoot exercise](./northwind-traders-spring-boot-exercise.md#-step-5-configure-your-database-connection) (this step was recently added if you completely other steps previously)
+   - FYI Step 5 is a more detailed version of the exercise on page 64
    - use Sakila as an example
    - [Sakila Example before reading from properties file](https://github.com/craigmckeachie/SakilaSpringBoot/blob/main/src/main/java/com/pluralsight/sakila/config/DatabaseConfig.java)
    - [Sakila Example that reads from properties file](https://github.com/craigmckeachie/SakilaSpringBoot/blob/config/src/main/java/com/pluralsight/sakila/config/DatabaseConfig.java)
